@@ -2,19 +2,18 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 class MyComponent extends Component {
-    static propTypes = {
-        name: PropTypes.string,
-        age: PropTypes.number.isRequired,
-    }
+
     static defaultProps = {
         name: '동찬'
     }
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            number: 0
-        }
+    static propTypes = {
+        name: PropTypes.string,
+        age: PropTypes.number.isRequired,
+    }
+
+    state = {
+        number: 0
     }
 
     render() {
